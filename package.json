@@ -1,6 +1,6 @@
 {
   "name": "vue3-spinner",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "./dist/vue3-spinner.umd.cjs",
   "module": "./dist/vue3-spinner.js",
   "files": [
