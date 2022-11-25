@@ -3,17 +3,10 @@
   "version": "0.0.9",
   "type": "module",
   "files": [
-    "dist"
+    "dist/*"
   ],
-  "main": "dist/vue3-spinner.umd.cjs",
-  "module": "dist/vue3-spinner.js",
-  "exports": {
-    ".": {
-      "import": "./dist/vue3-spinner.js",
-      "require": "./dist/vue3-spinner.umd.cjs"
-    },
-    "./dist/style.css": "./dist/style.css"
-  },
+  "main": "dist/library.js",
+  "module": "dist/library.mjs",
   "description": "Spinners for Vue 3",
   "repository": {
     "type": "git",
@@ -37,6 +30,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "rollup-plugin-postcss": "^4.0.2",
     "vue": "^3.2.41"
   },
   "devDependencies": {

@@ -34,11 +34,11 @@ const props = defineProps({
 
 const spinnerStyle = computed(() => {
   return {
-    height: this.size,
-    width: this.size,
-    border: parseFloat(this.size) / 10 + "px solid" + this.color,
+    height: props.size,
+    width: props.size,
+    border: parseFloat(props.size) / 10 + "px solid" + props.color,
     opacity: 0.4,
-    borderRadius: this.radius,
+    borderRadius: props.radius,
   };
 });
 

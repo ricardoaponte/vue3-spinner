@@ -1,9 +1,11 @@
 import vue from "rollup-plugin-vue";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import postcss from "rollup-plugin-postcss";
 
 export default [
   {
-    input: "./src/components/index.js",
+    input: "./src/index.js",
     output: [
       {
         format: "esm",
@@ -14,6 +16,11 @@ export default [
         file: "./dist/library.js",
       },
     ],
-    plugins: [vue(), peerDepsExternal()],
+    plugins: [
+      vue(),
+      peerDepsExternal(),
+      nodeResolve(),
+      postcss({ extensions: [".css"] }),
+    ],
   },
 ];
