@@ -122,4 +122,4 @@ You can control the spinner show/hidden by setting the loading prop.
 
 ## License
 
-vue2-spinner is licensed under [The MIT License](LICENSE).
+vue3-spinner is licensed under [The MIT License](LICENSE).
