@@ -38,6 +38,11 @@
     ></div>
   </div>
 </template>
+<script>
+export default {
+  name: "GridLoader",
+};
+</script>
 <script setup>
 import { computed } from "vue";
 
@@ -156,11 +161,6 @@ const delay = () => {
 
 const duration = () => {
   return random(100) / 100 + 0.6 + "s";
-};
-</script>
-<script>
-export default {
-  name: "GridLoader",
 };
 </script>
 

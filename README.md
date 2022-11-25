@@ -26,30 +26,100 @@ createApp(App)
 ## Usage
 
 ```html
-<PulseLoader :loading="loading" :color="color" :size="size"></PulseLoader>
-<GridLoader :loading="loading" :color="color" :size="size"></GridLoader>
-<ClipLoader :loading="loading" :color="color" :size="size"></ClipLoader>
-<RiseLoader :loading="loading" :color="color" :size="size"></RiseLoader>
-<BeatLoader :loading="loading" :color="color" :size="size"></beat-loader>
-<SyncLoader :loading="loading" :color="color" :size="size"></SyncLoader>
-<RotateLoader :loading="loading" :color="color" :size="size"></RotateLoader>
-<FadeLoader :loading="loading" :color="color" :height="height" :width="width">
-<PacmanLoader :loading="loading" :color="color" :size="size"></PacmanLoader>
-<SquareLoader :loading="loading" :color="color" :size="size"></SquareLoader>
-<ScaleLoader: loading="loading" :color="color" :height="height" :width="width">
-<SkewLoader :loading="loading" :color="color" :size="size"></SkewLoader>
-<MoonLoader :loading="loading" :color="color" :size="size"></MoonLoader>
-<RingLoader :loading="loading" :color="color" :size="size"></RingLoader>
-<BounceLoader :loading="loading" :color="color" :size="size"></BounceLoader>          
-<DotLoader :loading="loading" :color="color" :size="size"></DotLoader>
+<BeatLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<BounceLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<ClipLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<DotLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<FadeLoader
+        :loading="true | false"
+        :color="#color"
+        :height="height"
+        :width="width" />
+
+<GridLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<MoonLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<PacmanLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<PulseLoader
+        :loading="true | false"
+        :color="#5dc596"
+        :size="15px"
+        :margin="2px"
+        :radius="100%" />
+
+<RingLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<RiseLoader 
+        :loading="true | false" 
+        :color="#color" 
+        :size="size px" />
+
+<RotateLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<ScaleLoader
+        :loading="true | false"
+        :color="#color"
+        :height="height"
+        :width="width" />
+
+<SkewLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<SquareLoader
+        :loading="true | false"
+        :color="#color"
+        :size="size px" />
+
+<SyncLoader 
+        :loading="true | false" 
+        :color="#color" 
+        :size="size px" />
+
 ```
 
-You can customize the color and size by setting the props. All props have default value. You can control the spinner show/hidden by setting the loading prop.
+You can customize the color and size by setting the props. 
+All props have default value. 
+You can control the spinner show/hidden by setting the loading prop.
 
 ## TODO
-
+🤷🏻
 
 
 ## License
 
-vue-spinner is licensed under [The MIT License](LICENSE).
+vue2-spinner is licensed under [The MIT License](LICENSE).

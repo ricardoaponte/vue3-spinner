@@ -3,6 +3,11 @@
     <div class="v-clip" v-bind:style="spinnerStyle"></div>
   </div>
 </template>
+<script>
+export default {
+  name: "ClipLoader",
+};
+</script>
 <script setup>
 import { computed } from "vue";
 const props = defineProps({
@@ -35,11 +40,6 @@ const spinnerStyle = computed(() => {
     background: "transparent",
   };
 });
-</script>
-<script>
-export default {
-  name: "ClipLoader",
-};
 </script>
 
 <style>

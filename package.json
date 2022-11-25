@@ -25,6 +25,7 @@
   "homepage": "https://github.com/ricardoaponte/vue3-spinner#readme",
   "scripts": {
     "dev": "vite",
+    "build-example": "vite build",
     "build": "rollup -c",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"

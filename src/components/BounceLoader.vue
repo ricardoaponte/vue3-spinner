@@ -6,6 +6,11 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: "BounceLoader",
+};
+</script>
 <script setup>
 import { computed } from "vue";
 
@@ -52,11 +57,6 @@ const spinnerBasicStyle = computed(() => {
     position: "relative",
   };
 });
-</script>
-<script>
-export default {
-  name: "BounceLoader",
-};
 </script>
 
 <style>

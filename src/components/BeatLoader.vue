@@ -13,16 +13,6 @@ export default {
 <script setup>
 import { computed } from "vue";
 
-const spinnerStyle = computed(() => {
-  return {
-    backgroundColor: props.color,
-    height: props.size,
-    width: props.size,
-    margin: props.margin,
-    borderRadius: props.radius,
-  };
-});
-
 const props = defineProps({
   loading: {
     type: Boolean,
@@ -44,6 +34,16 @@ const props = defineProps({
     type: String,
     default: "100%",
   },
+});
+
+const spinnerStyle = computed(() => {
+  return {
+    backgroundColor: props.color,
+    height: props.size,
+    width: props.size,
+    margin: props.margin,
+    borderRadius: props.radius,
+  };
 });
 </script>
 
