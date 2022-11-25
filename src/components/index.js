@@ -1,14 +1,18 @@
-import components from "./components";
+// src/index.ts
+import { App } from 'vue'
 
-const plugin = {
-  install(Vue) {
-    for (const prop in components) {
-      if (components.hasOwnProperty(prop)) {
-        const component = components[prop];
-        Vue.component(component.name, component);
-      }
+import * as components from './components'
+
+const DSLibrary = {
+  install(app: App) {
+    // Auto import all components
+    for (const componentKey in components) {
+      app.use((components as any)[componentKey])
     }
-  },
-};
+  }
+}
 
-export default plugin;
+export default DSLibrary
+
+// export all components as vue plugin
+export * from './components'

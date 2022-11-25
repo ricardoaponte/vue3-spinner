@@ -1,12 +1,19 @@
 {
   "name": "vue3-spinner",
-  "version": "0.0.7",
-  "main": "./dist/vue3-spinner.umd.cjs",
-  "module": "./dist/vue3-spinner.js",
+  "version": "0.0.8",
+  "type": "module",
   "files": [
-    "./dist/*",
-    "./src/components/*"
+    "dist"
   ],
+  "main": "dist/vue3-spinner.umd.cjs",
+  "module": "dist/vue3-spinner.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-spinner.js",
+      "require": "./dist/vue3-spinner.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "description": "Spinners for Vue 3",
   "repository": {
     "type": "git",
@@ -23,14 +30,6 @@
     "url": "https://github.com/ricardoaponte/vue3-spinner/issues"
   },
   "homepage": "https://github.com/ricardoaponte/vue3-spinner#readme",
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/vue3-spinner.umd.cjs",
-      "require": "./dist/vue3-spinner.js"
-    },
-    "./dist/style.css": "./dist/style.css"
-  },
   "scripts": {
     "dev": "vite",
     "build": "rollup -c",
@@ -41,6 +40,7 @@
     "vue": "^3.2.41"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "@rushstack/eslint-patch": "^1.1.4",
     "@vitejs/plugin-vue": "^3.1.2",
     "@vue/eslint-config-prettier": "^7.0.0",
