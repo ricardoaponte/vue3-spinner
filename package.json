@@ -22,11 +22,12 @@
   "bugs": {
     "url": "https://github.com/ricardoaponte/vue3-spinner/issues"
   },
-  "homepage": "https://github.com/ricardoaponte/vue3-spinner#readme",
+  "homepage": "https://github.com/ricardoaponte/vue3-spinner/",
   "scripts": {
     "dev": "vite",
     "build-example": "vite build",
     "build": "rollup -c",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
@@ -40,6 +41,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
     "rollup": "^3.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",

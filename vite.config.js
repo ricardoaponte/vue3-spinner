@@ -5,6 +5,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/vue3-spinner/",
   plugins: [vue()],
   build: {
     lib: {
@@ -12,7 +13,6 @@ export default defineConfig({
       name: "Vue3Spinner",
       fileName: "vue3-spinner",
     },
-    outDir: resolve(__dirname, "./example/"),
   },
   rollupOptions: {
     // make sure to externalize deps that shouldn't be bundled
