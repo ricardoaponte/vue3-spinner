@@ -11,85 +11,40 @@ A collection of loading spinners for Vue 3. Inspired by [greyby](https://github.
 $ npm install vue3-spinner
 ```
 
-### CommonJS
-```js
-var PulseLoader = require('vue3-spinner/src/components/PulseLoader.vue');
-
-new Vue({
-  components: {
-    'PulseLoader': PulseLoader
-  }
-})
-```
-
 ### ES6
 ```js
-import PulseLoader from 'vue3-spinner/src/components/PulseLoader.vue'
+import { createApp } from 'vue'
+import App from './App.vue'
 
-new Vue({
-  components: {
-    PulseLoader
-  }
-})
-```
-Or:
-```js
-Vue.component('pulse-loader', require('vue3-spinner/src/PulseLoader.vue'));
-```
+import plugin from 'vue3-spinner'
 
-### For browserify
-If you use browserify + vueify, you may need to import vue-spinner like this:
-
-```js
-var PulseLoader= require('vue3-spinner/dist/vue-spinner.min').PulseLoader;
-```
-
-```js
-import { PulseLoader } from 'vue-spinner/dist/vue-spinner.min.js'
-```
-
-[explain here](https://github.com/greyby/vue-spinner/issues/2)
-
-### Browser globals
-The `dist` folder contains `vue-spinner.js` and `vue-spinner.min.js` with all components exported in the <code>window.VueSpinner</code> object. These bundles are also available on NPM packages.
-
-```html
-<script src="path/to/vue.js"></script>
-<script src="path/to/vue-spinner.js"></script>
-<script>
-  var PulseLoader = VueSpinner.PulseLoader
-</script>
-```
-
-## Local setup
-
-```
-npm install
-npm run dev
+createApp(App)
+    .use(plugin)
+    .mount('#app')
 ```
 
 ## Usage
 
 ```html
-<pulse-loader :loading="loading" :color="color" :size="size"></pulse-loader>
-<grid-loader :loading="loading" :color="color" :size="size"></grid-loader>
-<clip-loader :loading="loading" :color="color" :size="size"></clip-loader>
-<rise-loader :loading="loading" :color="color" :size="size"></rise-loader>
-<beat-loader :loading="loading" :color="color" :size="size"></beat-loader>
-<sync-loader :loading="loading" :color="color" :size="size"></sync-loader>
-<rotate-loader :loading="loading" :color="color" :size="size"></rotate-loader>
-<fade-loader :loading="loading" :color="color" :height="height" :width="width"></fade-loader>
-<pacman-loader :loading="loading" :color="color" :size="size"></pacman-loader>
-<square-loader :loading="loading" :color="color" :size="size"></square-loader>
-<scale-loader :loading="loading" :color="color" :height="height" :width="width"></scale-loader>
-<skew-loader :loading="loading" :color="color" :size="size"></skew-loader>
-<moon-loader :loading="loading" :color="color" :size="size"></moon-loader>
-<ring-loader :loading="loading" :color="color" :size="size"></ring-loader>
-<bounce-loader :loading="loading" :color="color" :size="size"></bounce-loader>          
-<dot-loader :loading="loading" :color="color" :size="size"></dot-loader>
+<PulseLoader :loading="loading" :color="color" :size="size"></PulseLoader>
+<GridLoader :loading="loading" :color="color" :size="size"></GridLoader>
+<ClipLoader :loading="loading" :color="color" :size="size"></ClipLoader>
+<RiseLoader :loading="loading" :color="color" :size="size"></RiseLoader>
+<BeatLoader :loading="loading" :color="color" :size="size"></beat-loader>
+<SyncLoader :loading="loading" :color="color" :size="size"></SyncLoader>
+<RotateLoader :loading="loading" :color="color" :size="size"></RotateLoader>
+<FadeLoader :loading="loading" :color="color" :height="height" :width="width">
+<PacmanLoader :loading="loading" :color="color" :size="size"></PacmanLoader>
+<SquareLoader :loading="loading" :color="color" :size="size"></SquareLoader>
+<ScaleLoader: loading="loading" :color="color" :height="height" :width="width">
+<SkewLoader :loading="loading" :color="color" :size="size"></SkewLoader>
+<MoonLoader :loading="loading" :color="color" :size="size"></MoonLoader>
+<RingLoader :loading="loading" :color="color" :size="size"></RingLoader>
+<BounceLoader :loading="loading" :color="color" :size="size"></BounceLoader>          
+<DotLoader :loading="loading" :color="color" :size="size"></DotLoader>
 ```
 
-You can customize the color and size with setting the props. All props have default value. You can control the spinner show/hidden with setting the loading prop.
+You can customize the color and size by setting the props. All props have default value. You can control the spinner show/hidden by setting the loading prop.
 
 ## TODO
 
