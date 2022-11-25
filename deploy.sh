@@ -4,10 +4,10 @@
 set -e
 
 # build
-npm run build-example
+npm run build
 
 # navigate into the build output directory
-cd example
+cd dist
 
 # place .nojekyll to bypass Jekyll processing
 echo > .nojekyll
