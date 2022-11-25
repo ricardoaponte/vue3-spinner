@@ -2,7 +2,7 @@
 
 A collection of loading spinners for Vue 3. Inspired by [greyby](https://github.com/greyby/vue-spinner) who converted yuanyan's React.js project Halogen to Vue.js components.
 
-## [Live demo](http://greyby.github.io/vue-spinner/)
+## [Live demo](http://ricardoaponte.github.io/vue3-spinner/)
 
 ## Installation
 

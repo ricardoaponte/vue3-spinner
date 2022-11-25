@@ -12,7 +12,12 @@ defineProps({
     <h1 class="green">{{ msg }}</h1>
     <h3>
       View source code
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Github</a>.
+      <a
+        href="https://github.com/ricardoaponte/vue3-spinner/"
+        target="_blank"
+        rel="noopener"
+        >Github</a
+      >.
     </h3>
   </div>
 </template>

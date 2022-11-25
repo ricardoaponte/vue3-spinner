@@ -1,6 +1,24 @@
 <script setup>
 import { ref } from "vue";
 import HelloWorld from "@/components/HelloWorld.vue";
+import {
+  PulseLoader,
+  BeatLoader,
+  DotLoader,
+  FadeLoader,
+  RotateLoader,
+  BounceLoader,
+  SyncLoader,
+  SquareLoader,
+  GridLoader,
+  MoonLoader,
+  RiseLoader,
+  SkewLoader,
+  RingLoader,
+  ScaleLoader,
+  PacmanLoader,
+  ClipLoader,
+} from "./components.js";
 
 const color = ref("#5dc596");
 const size = ref("15px");
@@ -71,5 +89,4 @@ const radius = ref("100%");
   </main>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -15,7 +15,7 @@ import SkewLoader from "./components/SkewLoader.vue";
 import SquareLoader from "./components/SquareLoader.vue";
 import SyncLoader from "./components/SyncLoader.vue";
 
-export default {
+export {
   BeatLoader,
   BounceLoader,
   ClipLoader,
