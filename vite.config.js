@@ -8,11 +8,11 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: resolve(__dirname, "src/components.js"),
+      entry: resolve(__dirname, "dist/index.js"),
       name: "Vue3Spinner",
       // the proper extensions will be added
       fileName: "vue3-spinner",
-    }
+    },
   },
   resolve: {
     alias: {

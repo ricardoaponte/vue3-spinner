@@ -9,18 +9,13 @@ export default [
     output: [
       {
         format: "esm",
-        file: "./dist/library.mjs",
+        file: "./dist/vue3-spinner.mjs",
       },
       {
         format: "cjs",
-        file: "./dist/library.js",
+        file: "./dist/vue3-spinner.js",
       },
     ],
-    plugins: [
-      vue(),
-      peerDepsExternal(),
-      nodeResolve(),
-      postcss({ extensions: [".css"] }),
-    ],
+    plugins: [vue(), peerDepsExternal(), nodeResolve(), postcss()],
   },
 ];

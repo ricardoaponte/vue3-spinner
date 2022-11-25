@@ -35,13 +35,9 @@ const props = defineProps({
 const spinnerStyle = computed(() => {
   return {
     backgroundColor: props.color,
-    height: props.size,
-    width: props.size,
+    height: parseFloat(props.size) / 2 + "px",
+    width: parseFloat(props.size) / 2 + "px",
     borderRadius: props.radius,
-    opacity: 0.6,
-    position: "absolute",
-    top: 0,
-    left: 0,
   };
 });
 

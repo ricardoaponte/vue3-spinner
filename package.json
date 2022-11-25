@@ -5,8 +5,8 @@
   "files": [
     "dist/*"
   ],
-  "main": "dist/library.js",
-  "module": "dist/library.mjs",
+  "main": "./dist/vue3-spinner.js",
+  "module": "./dist/vue3-spinner.mjs",
   "description": "Spinners for Vue 3",
   "repository": {
     "type": "git",
