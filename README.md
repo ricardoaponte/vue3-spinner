@@ -16,11 +16,23 @@ $ npm install vue3-spinner
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import plugin from 'vue3-spinner'
+import vue3Spinner from 'vue3-spinner'
 
 createApp(App)
-    .use(plugin)
+    .use(vue3Spinner)
     .mount('#app')
+```
+
+### As a Component
+```js
+<script setup>
+  import { DotLoader } from "vue3-spinner";
+</script>
+
+<template>
+  <DotLoader />
+</template>
+
 ```
 
 ## Usage
@@ -113,7 +125,7 @@ createApp(App)
 ```
 
 You can customize the color and size by setting the props. 
-All props have default value. 
+All props have a default value. 
 You can control the spinner show/hidden by setting the loading prop.
 
 ## TODO

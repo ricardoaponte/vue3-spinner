@@ -17,6 +17,7 @@ import {
   RingLoader,
   ScaleLoader,
   PacmanLoader,
+  Pacman2Loader,
   ClipLoader,
 } from "./components.js";
 

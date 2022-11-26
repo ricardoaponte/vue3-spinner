@@ -3,10 +3,16 @@
   "version": "0.0.14",
   "type": "module",
   "files": [
-    "lib"
+    "lib/*"
   ],
   "main": "./lib/vue3-spinner.js",
   "module": "./lib/vue3-spinner.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/vue3-spinner.js",
+      "require": "./lib/vue3-spinner.js"
+    }
+  },
   "description": "Spinners for Vue 3",
   "repository": {
     "type": "git",
