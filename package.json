@@ -1,9 +1,9 @@
 {
   "name": "vue3-spinner",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "type": "module",
   "files": [
-    "lib/*"
+    "lib"
   ],
   "main": "./lib/vue3-spinner.js",
   "module": "./lib/vue3-spinner.mjs",
