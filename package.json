@@ -1,12 +1,12 @@
 {
   "name": "vue3-spinner",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "type": "module",
   "files": [
-    "dist/*"
+    "lib/*"
   ],
-  "main": "./dist/vue3-spinner.js",
-  "module": "./dist/vue3-spinner.mjs",
+  "main": "./lib/vue3-spinner.js",
+  "module": "./lib/vue3-spinner.mjs",
   "description": "Spinners for Vue 3",
   "repository": {
     "type": "git",
@@ -25,14 +25,13 @@
   "homepage": "https://github.com/ricardoaponte/vue3-spinner/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "rolloup": "rollup -c",
-    "deploy": "gh-pages -d dist",
+    "build": "rollup -c & vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "vue": "^3.2.41"
+    "vue": "^3.2.41",
+    "vue3-spinner": "file:vue3-spinner-0.0.10.tgz"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
