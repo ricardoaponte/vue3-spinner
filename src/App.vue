@@ -11,13 +11,13 @@ import {
   SyncLoader,
   SquareLoader,
   GridLoader,
+  JellyfishLoader,
   MoonLoader,
   RiseLoader,
   SkewLoader,
   RingLoader,
   ScaleLoader,
   PacmanLoader,
-  Pacman2Loader,
   ClipLoader,
 } from "./components.js";
 
@@ -55,6 +55,9 @@ const radius = ref("100%");
       </li>
       <li class="spinner-list" title="grid loader">
         <GridLoader />
+      </li>
+      <li class="spinner-list" title="jellyfish loader">
+        <JellyfishLoader />
       </li>
       <li class="spinner-list" title="moon loader">
         <MoonLoader />
