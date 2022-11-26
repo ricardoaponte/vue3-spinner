@@ -1,53 +1,16 @@
-import BeatLoader from "./components/BeatLoader.vue";
-import BounceLoader from "./components/BounceLoader.vue";
-import ClipLoader from "./components/ClipLoader.vue";
-import DotLoader from "./components/DotLoader.vue";
-import FadeLoader from "./components/FadeLoader.vue";
-import GridLoader from "./components/GridLoader.vue";
-import MoonLoader from "./components/MoonLoader.vue";
-import PacmanLoader from "./components/PacmanLoader.vue";
-import PulseLoader from "./components/PulseLoader.vue";
-import RingLoader from "./components/RingLoader.vue";
-import RiseLoader from "./components/RiseLoader.vue";
-import RotateLoader from "./components/RotateLoader.vue";
-import ScaleLoader from "./components/ScaleLoader.vue";
-import SkewLoader from "./components/SkewLoader.vue";
-import SquareLoader from "./components/SquareLoader.vue";
-import SyncLoader from "./components/SyncLoader.vue";
-
-export default {
-  BeatLoader,
-  BounceLoader,
-  ClipLoader,
-  DotLoader,
-  FadeLoader,
-  GridLoader,
-  MoonLoader,
-  PacmanLoader,
-  PulseLoader,
-  RingLoader,
-  RiseLoader,
-  RotateLoader,
-  ScaleLoader,
-  SkewLoader,
-  SquareLoader,
-  SyncLoader,
-};
-export {
-  BeatLoader,
-  BounceLoader,
-  ClipLoader,
-  DotLoader,
-  FadeLoader,
-  GridLoader,
-  MoonLoader,
-  PacmanLoader,
-  PulseLoader,
-  RingLoader,
-  RiseLoader,
-  RotateLoader,
-  ScaleLoader,
-  SkewLoader,
-  SquareLoader,
-  SyncLoader,
-};
+export { default as BeatLoader } from "./components/BeatLoader.vue";
+export { default as BounceLoader } from "./components/BounceLoader.vue";
+export { default as ClipLoader } from "./components/ClipLoader.vue";
+export { default as DotLoader } from "./components/DotLoader.vue";
+export { default as FadeLoader } from "./components/FadeLoader.vue";
+export { default as GridLoader } from "./components/GridLoader.vue";
+export { default as MoonLoader } from "./components/MoonLoader.vue";
+export { default as PacmanLoader } from "./components/PacmanLoader.vue";
+export { default as PulseLoader } from "./components/PulseLoader.vue";
+export { default as RingLoader } from "./components/RingLoader.vue";
+export { default as RiseLoader } from "./components/RiseLoader.vue";
+export { default as RotateLoader } from "./components/RotateLoader.vue";
+export { default as ScaleLoader } from "./components/ScaleLoader.vue";
+export { default as SkewLoader } from "./components/SkewLoader.vue";
+export { default as SquareLoader } from "./components/SquareLoader.vue";
+export { default as SyncLoader } from "./components/SyncLoader.vue";
