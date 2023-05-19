@@ -1,5 +1,5 @@
 import * as components from "./components.js";
-export const vue3Spinner = {
+export default {
   install(Vue) {
     for (const prop in components) {
       const component = components[prop];
