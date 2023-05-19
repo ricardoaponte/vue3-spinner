@@ -9,7 +9,7 @@
   "module": "./lib/vue3-spinner.mjs",
   "exports": {
     ".": {
-      "import": "./lib/vue3-spinner.js",
+      "import": "./lib/vue3-spinner.mjs",
       "require": "./lib/vue3-spinner.js"
     }
   },
